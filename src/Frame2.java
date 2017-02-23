@@ -210,7 +210,7 @@ public class Frame2 extends javax.swing.JFrame {
     private void BantuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BantuanActionPerformed
         // TODO add your handling code here:
             new Bantuan().show();
-            this.dispose();
+            this.dispose(); 
     }//GEN-LAST:event_BantuanActionPerformed
 
     /**
