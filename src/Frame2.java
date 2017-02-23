@@ -64,6 +64,11 @@ public class Frame2 extends javax.swing.JFrame {
         Bantuan.setBackground(new java.awt.Color(204, 204, 204));
         Bantuan.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
         Bantuan.setText("<");
+        Bantuan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BantuanActionPerformed(evt);
+            }
+        });
         getContentPane().add(Bantuan);
         Bantuan.setBounds(30, 230, 90, 60);
 
@@ -201,6 +206,12 @@ public class Frame2 extends javax.swing.JFrame {
         mengambil.ambil(tab,t);
         tab =mengambil.getsaldo();
     }//GEN-LAST:event_PenarikanActionPerformed
+
+    private void BantuanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BantuanActionPerformed
+        // TODO add your handling code here:
+            new Bantuan().show();
+            this.dispose();
+    }//GEN-LAST:event_BantuanActionPerformed
 
     /**
      * @param args the command line arguments
